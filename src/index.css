@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #860202;
+  --color-primary-light: #b01010;
+  --color-primary-dark: #5e0101;
+  --color-saffron: #ff9933;
+  --color-saffron-light: #ffad5c;
+  --color-saffron-dark: #e07e1a;
+  --color-green-dark: #1b5e20;
+  --color-green-light: #2e7d32;
+  --color-gold: #d4a017;
+  --color-gold-light: #e6b82a;
+  --color-cream: #fff8f0;
+  --color-cream-dark: #f5ead8;
+  --color-text-dark: #2d2d2d;
+  --color-text-light: #666666;
+
+  --font-heading: "Aclonica", sans-serif;
+  --font-body: "Poppins", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
+  --animate-fade-in-left: fade-in-left 0.6s ease-out forwards;
+  --animate-fade-in-right: fade-in-right 0.6s ease-out forwards;
+  --animate-scale-in: scale-in 0.5s ease-out forwards;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+  --animate-bounce-subtle: bounce-subtle 2s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(134, 2, 2, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(134, 2, 2, 0.6);
+  }
+}
+
+@keyframes bounce-subtle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  background-color: #fff8f0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fff8f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #860202;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b01010;
+}
+
+/* Animation delay utilities */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Hide scrollbar for category tabs */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fill current color for lucide icons */
+.fill-saffron {
+  fill: #ff9933;
+}
+.fill-primary {
+  fill: #860202;
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .input {
+    @apply w-full py-3 px-4 rounded-2xl border-2 border-gray-200 focus:border-primary focus:outline-none font-body text-sm transition-colors bg-white shadow-sm hover:border-primary outline-0 focus:outline-0 ring-0 focus:ring-0;
+  }
+
+  .inputLabel {
+    @apply block text-sm font-medium text-text-dark mb-1.5;
+  }
+
+  .btn {
+    @apply px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 hover:border-primary;
+  }
+
+  .error_mess {
+    @apply bg-red-50 border border-red-200 rounded-xl p-3 flex items-center gap-2 text-red-700 text-sm;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .a-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .ax-center {
+    @apply absolute left-1/2 -translate-x-1/2;
+  }
+  .ay-center {
+    @apply absolute top-1/2 -translate-y-1/2;
+  }
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-primary to-primary-dark;
+  }
+}
+
+@layer utilities {
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .menu-card {
+    @apply relative p-4 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1;
+  }
+  .badge {
+    @apply absolute top-3 right-3 text-[10px] bg-primary text-white px-2 py-1 rounded-full flex items-center gap-1;
+  }
+}
