@@ -48,7 +48,7 @@ const HeroSection = () => {
         </AnimateSection>
 
         <AnimateSection animation="fade-in-up" delay={200}>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl text-white mb-4 leading-16">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl text-white mb-4  md:leading-16">
             Shree Ganesh
             <span className="block text-saffron mt-2 font-bold font-playfair">
               Restaurant &amp; Dhaba
@@ -57,20 +57,20 @@ const HeroSection = () => {
         </AnimateSection>
 
         <AnimateSection animation="fade-in-up" delay={400}>
-          <p className="text-md md:text-xl text-saffron-light font-medium mb-2 font-body">
+          <p className="text-sm md:text-xl text-saffron-light font-medium mb-2 font-body">
             Best Pure Veg Dhaba on Highway with Rooms
           </p>
-          <p className="text-xl md:text-2xl text-saffron-light font-medium mb-2 font-body">
+          <p className="text-lg md:text-2xl text-saffron-light font-medium mb-2 font-body">
             "शुद्ध स्वाद, शुभ शुरुआत"
           </p>
-          <p className="text-gray-300 text-base md:text-md mb-4 max-w-2xl mx-auto font-body">
+          <p className="text-gray-300 text-sm md:text-base mb-4 break-all max-w-2xl mx-auto font-body">
             Enjoy fresh homemade vegetarian food, clean hygienic dining, and
             comfortable AC & Non-AC rooms — all in one place. A perfect stop for
             families, tourists & drivers on the highway.
           </p>
         </AnimateSection>
            {/* Trust Badges */}
-        <AnimateSection animation="fade-in-up" delay={900} className="flex-center gap-4 mb-4">
+        <AnimateSection animation="fade-in-up" delay={900} className="flex-center gap-3 flex-wrap md:flex-nowrap md:gap-4 mb-4">
           {[
             { icon: <Leaf className="w-4 h-4" />, text: "100% Pure Veg" },
             { icon: <Clock className="w-4 h-4" />, text: "Open 24/7" },

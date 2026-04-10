@@ -3,35 +3,35 @@
     "title": "Best Pure Veg Restaurant Dhaba in sanawad khandwa Road | Shree Ganesh Restaurant",
     "description": "Enjoy delicious Indian fresh homemade veg food, clean rooms, and a family-friendly environment at Shree Ganesh Restaurant in Khandwa Road, Perfect stop for families & travelers on highway.",
     "keywords": "restaurant in Sanawad, veg restaurant, Indian food, dhaba, best thali, dhaba on highway",
-    "canonical": "https://yourdomain.com",
-    "image": "https://shreeganeshdhaba.com/images/og-home.jpg"
+    "canonical": "https://shreeganeshrestaurant.vercel.app",
+    "image": "https://shreeganeshrestaurant.vercel.app/images/og-home.jpg"
   },
   "menu": {
     "title": "Our Menu - Pure Veg Food | Shree Ganesh Restaurant & Dhaba",
     "description": "Explore our delicious menu including Special Thali, Dal Tadka, Sev Tamatar & Poha Jalebi. Fresh homemade vegetarian food.",
     "keywords": "restaurant menu, Indian food menu, veg thali,dhaba menu, dal tadka",
-    "canonical": "https://yourdomain.com/menu",
-    "image": "https://shreeganeshdhaba.com/images/og-menu.jpg"
+    "canonical": "https://shreeganeshrestaurant.vercel.app/menu",
+    "image": "https://shreeganeshrestaurant.vercel.app/images/og-menu.jpg"
   },
   "rooms": {
     "title": "Affordable Rooms - AC & Non-AC | Shree Ganesh Restaurant",
     "description": "Affordable AC & Non-AC rooms on highway with clean beds, attached bathroom & 24/7 service. Perfect stay for families & travelers.",
     "keywords": "rooms in Indore, budget hotel,budget rooms,budget rooms, dhaba rooms, highway rooms MP, rooms on highway,",
-    "canonical": "https://yourdomain.com/rooms",
-    "image": "https://shreeganeshdhaba.com/images/og-rooms.jpg"
+    "canonical": "https://shreeganeshrestaurant.vercel.app/rooms",
+    "image": "https://shreeganeshrestaurant.vercel.app/images/og-rooms.jpg"
   },
   "about": {
     "title": "About Us | Shree Ganesh Restaurant - Pure Veg",
     "description": "Serving travelers since 1995 with pure vegetarian food, hygienic kitchen, and comfortable rooms. Trusted highway dhaba for food & stay.",
     "keywords": "about restaurant,veg restaurant story, Indian food story, dhaba history,veg restaurant story",
-    "canonical": "https://yourdomain.com/about",
-    "image": "https://shreeganeshdhaba.com/images/og-about.jpg"
+    "canonical": "https://shreeganeshrestaurant.vercel.app/about",
+    "image": "https://shreeganeshrestaurant.vercel.app/images/og-about.jpg"
   },
   "contact": {
     "title": "Contact Us | Shree Ganesh Restaurant",
     "description": "Call or visit us to book your table or rooms. Easy location with parking & 24/7 service.",
     "keywords": "contact restaurant, restaurant contact, book table, dhaba contact, highway location, highway location ",
-    "canonical": "https://yourdomain.com/contact",
-    "image": "https://shreeganeshdhaba.com/images/og-contact.jpg"
+    "canonical": "https://shreeganeshrestaurant.vercel.app/contact",
+    "image": "https://shreeganeshrestaurant.vercel.app/images/og-contact.jpg"
   }
 }

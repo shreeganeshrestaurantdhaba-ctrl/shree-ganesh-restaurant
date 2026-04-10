@@ -28,7 +28,7 @@ const MenuCard: React.FC<{ item: MenuItem }> = ({ item }) => {
             </span>
           </div>
 
-          <p className="text-text-light text-xs leading-relaxed mb-2 line-clamp-2">{item.desc}</p>
+          <p className="text-text-light text-xs leading-relaxed mb-2 line-clamp-2">{item.description}</p>
 
           <div className="flex-center justify-between">
             <p className="text-primary font-bold text-lg">₹{item.price}</p>

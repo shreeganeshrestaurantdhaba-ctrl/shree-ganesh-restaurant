@@ -38,7 +38,7 @@ export default function MenuPage() {
 
       const matchSearch =
         item.name.toLowerCase().includes(search.toLowerCase()) ||
-        item.desc.toLowerCase().includes(search.toLowerCase());
+        item.description.toLowerCase().includes(search.toLowerCase());
 
       return matchCat && matchSearch;
     });
@@ -99,7 +99,7 @@ export default function MenuPage() {
 
         {/* Note */}
         <AnimateSection className="mt-12">
-          <div className="bg-saffron/10 border border-saffron/20 rounded-2xl p-6 text-center">
+          <div className="bg-saffron/10 border border-saffron/20 rounded-2xl p-4 md:p-6 text-center">
             <p className="text-text-dark font-medium mb-1">📋 Note</p>
             <p className="text-text-light text-sm">
               All prices are in INR (₹) and inclusive of GST. Menu items and

@@ -44,19 +44,19 @@ export default function AboutPage() {
             <AnimateSection animation="fade-in-left">
               <div className="relative">
                 <div className="bg-gradient-to-br from-saffron to-saffron-dark rounded-2xl p-8 text-white">
-                  <span className="text-6xl mb-4 block">🙏</span>
+                  {/* <span className="text-6xl mb-4 block">🙏</span> */}
                   <h3 className="font-heading text-2xl mb-2">Our Story</h3>
                   <p className="text-white/90 leading-relaxed">
                     What started as a small food stall in 1995 has grown into a
                     beloved highway destination. With God's blessings (Ganesh)
                     and your love, we have been serving pure vegetarian food for
-                    over 18 years.
+                    over 30 years.
                   </p>
                 </div>
                 {/* <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
                   🍛
                 </div> */}
-                <div className="absolute bottom-0 md:-bottom-6 -right-4 flex items-center gap-4 p-4 bg-orange-50 border border-orange-100 rounded-2xl shadow-sm">
+                <div className="absolute hidden md:-bottom-14 lg:-bottom-6 -right-4 md:flex items-center gap-4 p-4 bg-orange-50 border border-orange-100 rounded-2xl shadow-sm">
                   <ShieldCheck className="text-green-600 shrink-0" size={32} />
                   <div>
                     <h4 className="font-bold">Hygiene First Policy</h4>
@@ -87,7 +87,7 @@ export default function AboutPage() {
                   Our founder, Shri Rup Singh Solanki ji, started this dhaba
                   with just 4 tables and a dream. His belief was simple: "If you
                   serve good food with a clean heart, people will always come
-                  back." And they did — for 18+ years.
+                  back." And they did — for 30+ years.
                 </p>
                 <p>
                   Today, we serve 100+ customers daily, offer comfortable rooms,
@@ -150,17 +150,17 @@ export default function AboutPage() {
       {/* Stats */}
       <section className="section bg-cream">
         <div className="container">
-          <AnimateSection className="text-center mb-12">
+          <AnimateSection className="text-center mb-10">
             <h2 className="font-heading text-3xl md:text-4xl text-text-dark">
               Our Numbers Speak
             </h2>
             <SectionDivider />
           </AnimateSection>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {stats.map((stat, i) => (
               <AnimateSection key={stat.label} delay={i * 100}>
-                <div className="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-all duration-300">
+                <div className="bg-white rounded-2xl p-4 md:p-6 text-center shadow-md hover:shadow-lg transition-all duration-300">
                   <div className="flex justify-center mb-3">{stat.icon}</div>
                   <div className="text-primary mb-1">
                     <AnimatedCounter
@@ -243,9 +243,9 @@ export default function AboutPage() {
               We promise you a meal that feels like home and a stay that
               refreshes your journey.
             </p>
-            <div className="flex-center w-fit m-auto border border-primary-light  rounded-xl p-6 gap-2">
-              <ShieldCheck size={24} className="text-green-600" />
-              <span className="font-medium">
+            <div className="flex-center w-fit m-auto border border-primary-light rounded-xl p-4 md:p-6 gap-2">
+              <ShieldCheck size={24} className="text-green-600 shrink-0" />
+              <span className=" text-sm md:text-base font-medium">
                 Trusted by 50,000+ customers since 1995
               </span>
             </div>

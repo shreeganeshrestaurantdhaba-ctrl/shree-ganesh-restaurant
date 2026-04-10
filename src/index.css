@@ -190,7 +190,7 @@ body {
   }
 
   .btn {
-    @apply px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer;
+    @apply px-8 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer;
   }
 
   .btn-primary {
@@ -230,5 +230,8 @@ body {
   }
   .badge {
     @apply absolute top-3 right-3 text-[10px] bg-primary text-white px-2 py-1 rounded-full flex items-center gap-1;
+  }
+  .contact-card {
+    @apply bg-white rounded-2xl p-4 md:p-6 text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col;
   }
 }

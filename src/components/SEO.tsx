@@ -40,8 +40,8 @@ const SEO = ({
     "Shree Ganesh Restaurant & Dhaba | Pure Vegetarian Highway Dhaba";
   const defaultDescription =
     "Enjoy delicious Indian veg food, clean rooms, and a family-friendly environment at Shree Ganesh Restaurant.";
-  const defaultImage = "https://yourdomain.com/images/og-image.jpg";
-  const defaultUrl = "https://yourdomain.com";
+  const defaultImage = "https://shreeganeshrestaurant.vercel.app/images/og-image.jpg";
+  const defaultUrl = "https://shreeganeshrestaurant.vercel.app";
   const defaultKeywords =
     "restaurant in Sanawad, veg restaurant, Indian food, dhaba, best thali, pure veg dhaba, highway restaurant, dhaba rooms, vegetarian food MP";
 

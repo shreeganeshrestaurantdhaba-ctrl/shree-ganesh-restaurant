@@ -2,8 +2,8 @@ export const localBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Shree Ganesh Restaurant & Dhaba",
-  "image": "https://shreeganeshdhaba.com/images/logo.png",
-  "url": "https://shreeganeshdhaba.com",
+  "image": "https://shreeganeshrestaurant.vercel.app/images/logo.png",
+  "url": "https://shreeganeshrestaurant.vercel.app",
   "telephone": "+916265338614",
   "servesCuisine": "Vegetarian",
   "priceRange": "₹100-₹300",
@@ -35,7 +35,7 @@ export const websiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Shree Ganesh Restaurant & Dhaba",
-  url: "https://yourdomain.com",
+  url: "https://shreeganeshrestaurant.vercel.app",
   inLanguage: "en-IN",
   publisher: {
     "@type": "Organization",
@@ -43,7 +43,7 @@ export const websiteSchema = () => ({
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://yourdomain.com/menu?q={search_term_string}",
+    target: "https://shreeganeshrestaurant.vercel.app/menu?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 });
@@ -53,8 +53,8 @@ export const organizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Shree Ganesh Restaurant & Dhaba",
-  url: "https://yourdomain.com",
-  logo: "https://yourdomain.com/logo.png",
+  url: "https://shreeganeshrestaurant.vercel.app",
+  logo: "https://shreeganeshrestaurant.vercel.app/logo.png",
   sameAs: [
     "https://facebook.com/yourpage",
     "https://instagram.com/yourpage",
@@ -76,19 +76,19 @@ export const restaurantSchema = () => ({
 
   name: "Shree Ganesh Restaurant & Dhaba",
   image: [
-    "https://yourdomain.com/images/restaurant.jpg",
-    "https://yourdomain.com/images/food.jpg",
+    "https://shreeganeshrestaurant.vercel.app/images/restaurant.jpg",
+    "https://shreeganeshrestaurant.vercel.app/images/food.jpg",
   ],
-  url: "https://yourdomain.com",
-  "@id": "https://yoursite.com",
+  url: "https://shreeganeshrestaurant.vercel.app",
+  "@id": "https://shreeganeshrestaurant.vercel.app",
   telephone: "+91-6265338614",
   servesCuisine: ["Indian", "Vegetarian", "Chinese", "Fast Food"],
   priceRange: "₹100-₹300",
-  menu: "https://yoursite.com/menu",
+  menu: "https://shreeganeshrestaurant.vercel.app/menu",
 
   address: {
     "@type": "PostalAddress",
-    streetAddress: "NH-347BG Highway, Khanda–Indore Road",
+    streetAddress: "NH-347BG Highway, khandwa–Indore Road",
     addressLocality: "Baswa",
     addressRegion: "Madhya Pradesh",
     postalCode: "452001",

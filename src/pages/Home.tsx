@@ -217,7 +217,7 @@ export default function Home() {
                     <Coffee className="text-primary" size={24} />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-gray-900">10+</p>
+                    <p className="text-2xl font-bold text-gray-900">30+</p>
                     <p className="text-gray-500 text-xs">Years of Service</p>
                   </div>
                 </div>
@@ -317,7 +317,7 @@ export default function Home() {
                 +91 62653 38614
               </a>
               <a
-                href="https://wa.me/6265338614?text=Hello Shree Ganesh Restaurant  & Dhaba, I would like to inquire about your menu and room availability."
+                href="https://wa.me/916265338614?text=Namaste%20🙏%0AI%20want%20more%20details%20about%20Shree%20Ganesh%20Restaurant%20%26%20Dhaba.%0A%0A🍛%20Menu%20details%0A🛏%20Room%20price%20%26%20availability%0A📍%20Exact%20location%0A%0APlease%20share%20details."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn flex-center gap-2 rounded-2xl bg-green-500 text-white hover:bg-green-600"

@@ -27,7 +27,7 @@ export default function Navbar() {
             <img
               src="/images/logo-black.png"
               alt="Shree Ganesh Logo"
-              className="w-full h-[70px] "
+              className="w-full h-[50px] md:h-[70px] "
               loading="lazy"
             />
           </Link>

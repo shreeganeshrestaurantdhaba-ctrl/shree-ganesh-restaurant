@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -13,6 +14,9 @@ import Menu from '@/pages/Menu';
 import Rooms from '@/pages/Rooms';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
+import NotFound from '@/pages/NotFound';
+
+
 
 
 export default function App() {
@@ -28,6 +32,7 @@ export default function App() {
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

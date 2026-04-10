@@ -39,7 +39,7 @@ export interface FAQType {
 export interface MenuItem {
   id: number;
   name: string;
-  desc: string;
+  description: string;
   price: number;
   category: string;
   popular?: boolean;

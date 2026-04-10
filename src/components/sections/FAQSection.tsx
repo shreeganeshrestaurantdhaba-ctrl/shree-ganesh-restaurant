@@ -25,7 +25,7 @@ const FAQSection: React.FC<Props> = ({ faqs }) => {
           }
           description="Got questions? Here are answers to the most common things travelers ask us."
         />
-        <div className=" flex flex-col gap-3 my-8">
+        <div className=" flex flex-col gap-3 ">
           {faqs.map((faq, i) => (
             <div
               key={i}

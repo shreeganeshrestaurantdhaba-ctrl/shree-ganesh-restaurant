@@ -63,10 +63,34 @@ export default function RoomsPage() {
 
     setFormStatus("loading");
 
-    // Simulate API call
+    const message = `Namaste 🙏  
+
+I would like to request a room booking at Shree Ganesh Restaurant & Dhaba.
+
+Here are my details:
+
+👤 Name: ${formData.name}
+📞 Phone: ${formData.phone}
+📅 Check-in Date: ${formData.date}
+🛏 Room Type: ${formData.roomType === "ac" ? "AC Room" : "Non AC Room"}
+👥 Number of Guests: ${formData.guests}
+
+Kindly confirm room availability and booking details.
+
+Thank you!`;
+
+    // 👉 Encode message
+    const encodedMessage = encodeURIComponent(message);
+
+    // 👉 WhatsApp URL
+    const whatsappURL = `https://wa.me/916265338614?text=${encodedMessage}`;
+
+    // Small delay (optional UX)
     setTimeout(() => {
-      console.log("Booking submitted:", formData);
+      window.open(whatsappURL, "_blank");
+
       setFormStatus("success");
+
       setFormData({
         name: "",
         phone: "",
@@ -76,7 +100,7 @@ export default function RoomsPage() {
       });
 
       setTimeout(() => setFormStatus("idle"), 5000);
-    }, 1500);
+    }, 800);
   };
 
   return (
@@ -270,6 +294,7 @@ export default function RoomsPage() {
                       min={new Date().toISOString().split("T")[0]}
                       className="input shadow-none rounded-xl"
                       required
+                      placeholder="dd-mm-yyyy"
                     />
                   </div>
                   <div>
