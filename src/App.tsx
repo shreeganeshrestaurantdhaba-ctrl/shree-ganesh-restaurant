@@ -1,3 +1,4 @@
+//app.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Import Swiper styles
 import "swiper/css";

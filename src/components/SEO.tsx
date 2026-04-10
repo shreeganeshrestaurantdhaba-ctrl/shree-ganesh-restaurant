@@ -111,8 +111,8 @@ const SEO = ({
       )}
        {/* ================= PWA / APP SEO ================= */}
       <meta name="application-name" content={siteName} />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      {/* <meta name="apple-mobile-web-app-capable" content="yes" /> */}
+      {/* <meta name="apple-mobile-web-app-status-bar-style" content="default" /> */}
       {/* ================= SECURITY SEO ================= */}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     </Helmet>
